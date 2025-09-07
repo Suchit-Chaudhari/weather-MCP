@@ -1,22 +1,16 @@
 {
   "name": "weather-mcp-sdk",
   "version": "1.0.0",
-  "description": "Weather SDK built with MCP and TypeScript",
-  "author": "Your Name",
-  "license": "MIT",
-  "keywords": ["weather", "sdk", "mcp", "typescript"],
-  "type": "module",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
+  "main": "src/index.ts",
   "scripts": {
-    "start": "ts-node-esm src/index.ts",
-    "build": "tsc",
-    "prepublishOnly": "npm run build",
+    "start": "node --loader ts-node/esm src/index.ts",
     "test": "echo \"No tests specified\""
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.17.2",
     "axios": "^1.11.0",
